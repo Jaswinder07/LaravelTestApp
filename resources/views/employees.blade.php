@@ -17,7 +17,7 @@
                     @if ($employee->children->isNotEmpty())
                         <ul>
                             @foreach ($employee->children as $child)
-                                @include('employees', ['employees' => [$child]]) <!-- Recursive call -->
+                                @include('employees', ['employees' => [$child]])
                             @endforeach
                         </ul>
                     @endif
